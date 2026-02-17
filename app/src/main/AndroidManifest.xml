@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NumOneApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".StartupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthorizationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
