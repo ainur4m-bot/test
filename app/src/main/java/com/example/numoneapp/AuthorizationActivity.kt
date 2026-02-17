@@ -36,7 +36,7 @@ class AuthorizationActivity : AppCompatActivity() {
         }
 
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
-        val isPasswordOpen = false
+        var isPasswordOpen = false
         val eyeIcon = findViewById<ImageView>(R.id.eyeIcon)
 
         eyeIcon.setOnClickListener {
@@ -49,6 +49,7 @@ class AuthorizationActivity : AppCompatActivity() {
                 passwordEditText.transformationMethod =
                     HideReturnsTransformationMethod.getInstance()
             }
+            isPasswordOpen = !isPasswordOpen
 
         }
 
@@ -57,11 +58,19 @@ class AuthorizationActivity : AppCompatActivity() {
             val intentToRegistrarion = Intent(this, RegistrationActivity::class.java)
             startActivity(intentToRegistrarion)
         }
+
         val toStartup = findViewById<ImageButton>(R.id.imageButton2)
         toStartup.setOnClickListener {
 
             val intentToStartup = Intent(this, StartupActivity::class.java)
             startActivity(intentToStartup)
+        }
+
+        val forgotPass = findViewById<TextView>(R.id.textForgotPass)
+        forgotPass.setOnClickListener {
+
+            val intentToVerif = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intentToVerif)
         }
 
 

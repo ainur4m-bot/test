@@ -13,6 +13,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+
 import org.intellij.lang.annotations.Pattern
 
 class RegistrationActivity : AppCompatActivity() {
@@ -26,17 +27,18 @@ class RegistrationActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val emailEditText = findViewById<EditText>(R.id.emailEditText).text.toString()
+        val emailPattern = Regex("^[a-z0-9]+@[a-z0-9]+\\.ru$")
 
         val toAuthorization = findViewById<TextView>(R.id.toAuthorization)
         toAuthorization.setOnClickListener {
-
             val intent = Intent(this, AuthorizationActivity::class.java)
             startActivity(intent)
         }
 
 
-        val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
-        val isPasswordOpen = false
+        var passwordEditText = findViewById<EditText>(R.id.passwordEditText)
+        var isPasswordOpen = false
         val eyeIcon = findViewById<ImageView>(R.id.eyeIcon)
 
         eyeIcon.setOnClickListener {
@@ -50,7 +52,7 @@ class RegistrationActivity : AppCompatActivity() {
                     HideReturnsTransformationMethod.getInstance()
             }
 
-
+            isPasswordOpen = !isPasswordOpen
         }
 
         val toStartup = findViewById<ImageButton>(R.id.buttonToStartup)
@@ -58,6 +60,13 @@ class RegistrationActivity : AppCompatActivity() {
 
             val intentToStartup = Intent(this, StartupActivity::class.java)
             startActivity(intentToStartup)
+
+
         }
+
+
+
+
+
     }
 }

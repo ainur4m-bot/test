@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TwoFactorVerificationActivity">
+
+
+    <ImageView
+        android:id="@+id/backToForgot"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="21dp"
+
+        android:background="@drawable/ic_black_arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="46dp"
+
+        android:text="Проверка"
+        android:textColor="@color/light_green"
+
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backToForgot" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginStart="41dp"
+        android:text="Введите код, который мы вам отправили"
+        android:textColor="@color/dark_gray"
+
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+
+        <ImageView
+            android:id="@+id/cornerOne"
+            android:layout_width="48dp"
+            android:layout_height="61dp"
+
+
+            android:background="@drawable/rounded_light_gray_rg"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+        <ImageView
+            android:id="@+id/cornerTwo"
+            android:layout_width="48dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="22dp"
+
+            android:background="@drawable/rounded_light_gray_rg"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/cornerOne"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+        <ImageView
+            android:id="@+id/cornerThree"
+            android:layout_width="48dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="22dp"
+
+
+            android:background="@drawable/rounded_light_gray_rg"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/cornerTwo"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <ImageView
+            android:id="@+id/cornerFour"
+            android:layout_width="48dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="22dp"
+
+            android:background="@drawable/rounded_light_gray_rg"
+            android:inputType="number"
+
+            app:layout_constraintStart_toEndOf="@+id/cornerThree"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:text="Выслать заново через 00:30"
+
+        android:textColor="@color/dark_gray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+    <ImageButton
+        android:id="@+id/buttonToResetPass"
+        android:layout_width="64dp"
+
+        android:layout_height="64dp"
+
+
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/rounded_rg"
+
+        android:src="@drawable/ic_white_arrow_right"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.15" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

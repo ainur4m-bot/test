@@ -30,7 +30,7 @@
 
         android:text="Войти"
 
-        android:textColor="@color/dark_green"
+        android:textColor="@color/light_green"
 
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +46,7 @@
 
         android:text="Добро пожаловать"
         android:textColor="@color/dark_gray"
+
 
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -135,7 +136,7 @@
         app:layout_constraintEnd_toEndOf="@+id/passwordEditText" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textForgotPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -145,7 +146,7 @@
 
         android:text="Забыли пароль?"
 
-        android:textColor="@color/dark_green"
+        android:textColor="@color/light_green"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -165,7 +166,7 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textForgotPass"
         app:layout_constraintVertical_bias="0.37" />
 
     <TextView
@@ -229,7 +230,7 @@
             android:clickable="true"
 
             android:text="Зарегистрироваться."
-            android:textColor="@color/dark"
+            android:textColor="@color/light_green"
             android:textSize="14sp"
 
             />

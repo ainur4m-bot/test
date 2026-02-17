@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NumOneApp">
         <activity
+            android:name=".CafeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TwoFactorVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".StartupActivity"
             android:exported="false" />
         <activity
