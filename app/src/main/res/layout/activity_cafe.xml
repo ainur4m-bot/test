@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CafeActivity">
+
+    <ImageView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/ic_cafe_map"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_green_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:text="Выберите кофейню Coffee break"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/ic_white_rectangle"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:layout_constraintVertical_bias="1" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
