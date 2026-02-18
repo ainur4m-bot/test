@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat
 import org.intellij.lang.annotations.Pattern
 
 class RegistrationActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -63,6 +63,19 @@ class RegistrationActivity : AppCompatActivity() {
 
 
         }
+
+        val editText = findViewById<EditText>(R.id.nameEditText)
+        val name = editText.text.toString().trim()
+
+        val data = getSharedPreferences("userData", MODE_PRIVATE)
+        val editor = data.edit()
+
+            editor.putString("name",name)
+
+        editor.apply()
+
+
+
 
 
 

@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="26dp"
+
+        android:text="Добро пожаловать!"
+        android:textColor="@color/gray_A1"
+
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/nameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/userName"
+        android:textSize="18sp"
+        android:layout_marginStart="26dp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <ImageView
+        android:id="@+id/shopIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_buy"
+
+        app:layout_constraintEnd_toStartOf="@+id/profileIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="33dp"
+
+        android:background="@drawable/ic_dark_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/menu_screen"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_marginTop="34dp"
+        android:background="@color/menu_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="16dp"
+
+        android:text="Выберите Ваш кофе"
+        android:textColor="@color/menu_text"
+
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menu_screen" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/buttonOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        app:layout_constraintWidth_percent="0.37"
+        app:layout_constraintHeight_percent="0.2"
+
+        android:layout_marginTop="29dp"
+
+
+        android:background="@drawable/white_rounded_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+    <ImageView
+        android:id="@+id/americano"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/ic_americano"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOne"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOne"
+        app:layout_constraintStart_toStartOf="@+id/buttonOne"
+        app:layout_constraintTop_toTopOf="@+id/buttonOne"
+        app:layout_constraintVertical_bias="0.15" />
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Американо"
+        android:textSize="14sp"
+        android:textColor="@color/cafeName"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOne"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOne"
+        app:layout_constraintStart_toStartOf="@+id/buttonOne"
+        app:layout_constraintTop_toBottomOf="@+id/americano"
+        app:layout_constraintVertical_bias="0.1" />
+    <TextView
+        android:id="@+id/rubles1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+
+        android:layout_marginBottom="5dp"
+        android:text="100₽"
+        android:textSize="10sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOne"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOne" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_capuchino"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTwo"
+        app:layout_constraintStart_toStartOf="@+id/buttonTwo"
+        app:layout_constraintTop_toTopOf="@+id/buttonTwo"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Капучино"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTwo"
+        app:layout_constraintStart_toStartOf="@+id/buttonTwo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.36" />
+    <TextView
+        android:id="@+id/rubles2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+
+        android:layout_marginBottom="5dp"
+        android:text="100₽"
+        android:textSize="10sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTwo" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/buttonTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        app:layout_constraintWidth_percent="0.37"
+        app:layout_constraintHeight_percent="0.2"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="29dp"
+
+        android:background="@drawable/white_rounded_button"
+
+        app:layout_constraintStart_toEndOf="@+id/buttonOne"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_goneMarginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/capuchino"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_capuchino"
+
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTwo"
+        app:layout_constraintStart_toStartOf="@+id/buttonTwo"
+        app:layout_constraintTop_toTopOf="@+id/buttonTwo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Капучино"
+        android:textSize="14sp"
+        android:textColor="@color/cafeName"
+
+        app:layout_constraintVertical_bias="0.36"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTwo"
+        app:layout_constraintStart_toStartOf="@+id/buttonTwo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+    <TextView
+        android:id="@+id/rubles2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+
+        android:layout_marginBottom="5dp"
+        android:text="100₽"
+        android:textSize="10sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTwo" />
+
+
+
+
+    <ImageView
+        android:id="@+id/buttonThree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintWidth_percent="0.37"
+        app:layout_constraintHeight_percent="0.2"
+        android:layout_marginTop="17dp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        app:layout_constraintHorizontal_bias="0.15"
+        android:background="@drawable/white_rounded_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOne" />
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_latte"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonThree"
+        app:layout_constraintEnd_toEndOf="@+id/buttonThree"
+        app:layout_constraintStart_toStartOf="@+id/buttonThree"
+        app:layout_constraintTop_toTopOf="@+id/buttonThree"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Латте"
+        android:textColor="@color/cafeName"
+
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonThree"
+        app:layout_constraintEnd_toEndOf="@+id/buttonThree"
+        app:layout_constraintStart_toStartOf="@+id/buttonThree"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.1" />
+    <TextView
+        android:id="@+id/rubles3"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+
+        android:layout_marginBottom="5dp"
+        android:text="100₽"
+        android:textSize="10sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonThree"
+        app:layout_constraintEnd_toEndOf="@+id/buttonThree" />
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/buttonFour"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintWidth_percent="0.37"
+        app:layout_constraintHeight_percent="0.2"
+        android:layout_marginStart="24dp"
+
+        android:background="@drawable/white_rounded_button"
+        android:layout_marginTop="17dp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        app:layout_constraintStart_toEndOf="@+id/buttonThree"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTwo"
+        app:layout_goneMarginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/ic_flat_white"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFour"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFour"
+        app:layout_constraintStart_toStartOf="@+id/buttonFour"
+        app:layout_constraintTop_toTopOf="@+id/buttonFour"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Флэт Уайт"
+        android:textColor="@color/cafeName"
+        android:textSize="14sp"
+        app:layout_constraintVertical_bias="0.15"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFour"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFour"
+        app:layout_constraintStart_toStartOf="@+id/buttonFour"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+    <TextView
+        android:id="@+id/rubles4"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+
+        android:layout_marginBottom="5dp"
+        android:text="100₽"
+        android:textSize="10sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFour"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFour" />
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/buttonFive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintWidth_percent="0.37"
+        app:layout_constraintHeight_percent="0.2"
+        android:layout_marginTop="17dp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        app:layout_constraintHorizontal_bias="0.15"
+        android:background="@drawable/white_rounded_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonThree" />
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/ic_raf"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFive"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFive"
+        app:layout_constraintStart_toStartOf="@+id/buttonFive"
+        app:layout_constraintTop_toTopOf="@+id/buttonFive"
+        app:layout_constraintVertical_bias="0.34" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Раф"
+        android:textColor="@color/cafeName"
+        android:textSize="14sp"
+
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFive"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFive"
+        app:layout_constraintStart_toStartOf="@+id/buttonFive"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+    <TextView
+        android:id="@+id/rubles5"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+
+        android:layout_marginBottom="5dp"
+        android:text="100₽"
+        android:textSize="10sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFive"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFive" />
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/buttonSix"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintWidth_percent="0.37"
+        app:layout_constraintHeight_percent="0.2"
+        android:layout_marginStart="24dp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:background="@drawable/white_rounded_button"
+        android:layout_marginTop="17dp"
+
+        app:layout_constraintStart_toEndOf="@+id/buttonFive"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFour"
+        app:layout_goneMarginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/ic_espresso"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSix"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSix"
+        app:layout_constraintStart_toStartOf="@+id/buttonSix"
+        app:layout_constraintTop_toTopOf="@+id/buttonSix"
+        app:layout_constraintVertical_bias="0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Эспрессо"
+        android:textColor="@color/cafeName"
+        android:textSize="14sp"
+        app:layout_constraintVertical_bias="0"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSix"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSix"
+        app:layout_constraintStart_toStartOf="@+id/buttonSix"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+    <TextView
+        android:id="@+id/rubles6"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+
+        android:layout_marginBottom="5dp"
+        android:text="100₽"
+        android:textSize="10sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSix"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSix" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/white_rounded_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_gray_gift"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:background="@drawable/ic_dark_shop_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:background="@drawable/ic_gray_list"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
