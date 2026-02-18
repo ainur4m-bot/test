@@ -112,7 +112,7 @@
         android:background="@drawable/white_rounded_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.15  "
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
     <ImageView
         android:id="@+id/americano"
