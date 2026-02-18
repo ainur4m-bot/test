@@ -7,4 +7,597 @@
     android:layout_height="match_parent"
     tools:context=".OrderOptionsActivity">
 
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+
+        android:background="@drawable/ic_black_arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+        android:text="Заказ"
+
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+
+        android:background="@drawable/ic_buy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/white_background"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.175"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+    <ImageView
+        android:id="@+id/coffeeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:background="@drawable/ic_capuchino"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="17dp"
+
+        android:text="Капучино"
+        android:textColor="@color/cafeName"
+
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+    <ImageView
+
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+
+
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/ic_circle_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+
+
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_plus"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="@+id/imageView21" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="5dp"
+
+        android:background="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintStart_toStartOf="@+id/imageView21" />
+
+    <TextView
+        android:id="@+id/numCups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toStartOf="@+id/imageView22"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+
+        android:background="@color/line_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/ristretto"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+
+        android:text="Ристретто"
+        android:textColor="@color/cafeName"
+        android:layout_marginTop="21dp"
+
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <ImageView
+        android:id="@+id/odin"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_marginTop="17dp"
+        android:src="@drawable/ic_circle_rectangle"
+        app:layout_constraintEnd_toStartOf="@+id/dwa"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <ImageView
+        android:id="@+id/dwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ic_circle_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Один"
+        android:textColor="@color/selected_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/odin"
+        app:layout_constraintEnd_toEndOf="@+id/odin"
+        app:layout_constraintStart_toStartOf="@+id/odin"
+        app:layout_constraintTop_toTopOf="@+id/odin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Два"
+        android:textColor="@color/selected_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dwa"
+        app:layout_constraintEnd_toEndOf="@+id/dwa"
+        app:layout_constraintStart_toStartOf="@+id/dwa"
+        app:layout_constraintTop_toTopOf="@+id/dwa" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+
+        android:layout_marginEnd="32dp"
+
+        android:background="@color/line_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/odin" />
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+
+        android:text="На месте / навынос"
+        android:textColor="@color/cafeName"
+        android:layout_marginTop="21dp"
+
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <ImageView
+        android:id="@+id/cup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="31dp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:src="@drawable/ic_gray_cup"
+        app:layout_constraintEnd_toStartOf="@+id/longcup"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <ImageView
+
+        android:id="@+id/longcup"
+        android:layout_width="wrap_content"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="53dp"
+
+        android:src="@drawable/ic_longcup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="32dp"
+
+        android:background="@color/line_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cup" />
+
+    <TextView
+        android:id="@+id/obiem"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="18dp"
+
+        android:text="Объем, мл"
+        android:textColor="@color/cafeName"
+
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <ImageView
+        android:id="@+id/bigcoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:src="@drawable/ic_big_coffee"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+    <TextView
+        android:id="@+id/ml450"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="450"
+        android:textColor="@color/gray_A1"
+        android:textSize="14sp"
+
+
+        android:layout_marginEnd="51dp"
+        android:layout_marginTop="3dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bigcoffee" />
+
+
+    <ImageView
+        android:id="@+id/midcoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+
+        android:src="@drawable/ic_mid_coffee"
+        app:layout_constraintEnd_toStartOf="@+id/bigcoffee"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/ml350"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="350"
+        android:textColor="@color/gray_A1"
+        android:textSize="14sp"
+
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="4dp"
+
+        app:layout_constraintEnd_toStartOf="@+id/ml450"
+        app:layout_constraintTop_toBottomOf="@+id/midcoffee" />
+
+    <ImageView
+        android:id="@+id/smallcoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_small_coffee"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="27dp"
+
+        app:layout_constraintEnd_toStartOf="@+id/midcoffee"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/ml250"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="250"
+        android:textColor="@color/gray_A1"
+        android:textSize="14sp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="4dp"
+
+        app:layout_constraintEnd_toStartOf="@+id/ml350"
+        app:layout_constraintTop_toBottomOf="@+id/smallcoffee" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+
+        android:background="@color/line_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ml250" />
+
+    <TextView
+        android:id="@+id/atTime"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+
+        android:layout_marginTop="8dp"
+        android:text="Приготовить к\nопределенному времени\nсегодня?"
+        android:textColor="@color/cafeName"
+
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+
+        android:layout_marginTop="1dp"
+
+
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/ic_timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="0dp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_height="0dp"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dark_green_button"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView27"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+
+        android:background="@drawable/ic_filter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+        app:layout_constraintStart_toStartOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Конструктор кофемана"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+        app:layout_constraintStart_toEndOf="@+id/imageView30"
+        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/ic_small_arrow_right"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+        app:layout_constraintEnd_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+    <ImageView
+        android:id="@+id/toBarista"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dark_button"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        app:layout_constraintBottom_toBottomOf="@+id/toBarista"
+        app:layout_constraintEnd_toEndOf="@+id/toBarista"
+        app:layout_constraintStart_toStartOf="@+id/toBarista"
+        app:layout_constraintTop_toTopOf="@+id/toBarista" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintVertical_bias="0.7"
+        android:text="Итоговая сумма"
+        android:textColor="@color/cafeName"
+
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/montserrat"
+        android:text="250₽"
+
+        android:textColor="@color/black"
+        android:textSize="16sp"
+            app:layout_constraintVertical_bias="1"
+
+        app:layout_constraintBottom_toTopOf="@+id/imageView31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

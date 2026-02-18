@@ -15,4 +15,11 @@
     <color name="menu_text">#D9D9D9</color>
     <color name="userName">#4F7993</color>
     <color name="cafeName">#1D1D1D</color>
+
+    <color name="white_background">#F7F8FB</color>
+    <color name="line_color">#F4F5F7</color>
+    <color name="selected_color">#1D1D1D</color>
+    <color name="dark_green">#147F37</color>
+    <color name="barista">#3B3B3B</color>
+
 </resources>
