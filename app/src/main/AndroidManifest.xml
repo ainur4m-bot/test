@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NumOneApp">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".CafeActivity"
             android:exported="false" />
         <activity

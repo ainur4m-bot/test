@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+
+        android:background="@drawable/ic_black_arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+
+        android:text="Профиль"
+        android:textColor="@color/cafeName"
+        android:textSize="16sp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="29dp"
+
+
+        android:background="@drawable/ic_circle_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Алексей"
+
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+
+        android:text="Имя"
+        android:textColor="@color/gray_A1"
+
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ic_circle_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/phoneNum"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Номер телефона"
+
+        android:textColor="@color/gray_A1"
+        android:textSize="10sp"
+
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="16dp"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="+7 812 324 6345"
+
+        android:layout_marginStart="16dp"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNum" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ic_circle_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Почта"
+        android:textColor="@color/gray_A1"
+
+        android:textSize="10sp"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="16dp"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="apolsdiapoui@gmail.com"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
+
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ic_circle_gps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Адрес кофейни Magic Coffee"
+
+        android:textColor="@color/gray_A1"
+        android:textSize="10sp"
+
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="16dp"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/gps"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:text="г. Оренбург, ул. Чкалова 32"
+
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+
+        app:layout_constraintTop_toBottomOf="@+id/adress" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+
+
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ic_qr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+    <TextView
+        android:id="@+id/qr"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="QR-код"
+        android:textColor="@color/gray_A1"
+
+        android:textSize="10sp"
+
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/gps" />
+
+    <TextView
+        android:id="@+id/forOrder"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Для получения заказа"
+
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/qr" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
