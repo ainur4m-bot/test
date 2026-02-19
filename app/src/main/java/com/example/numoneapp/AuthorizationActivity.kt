@@ -63,8 +63,10 @@ class AuthorizationActivity : AppCompatActivity() {
 
         val toRegistration = findViewById<TextView>(R.id.textToRegistration)
         toRegistration.setOnClickListener {
+
             val intentToRegistrarion = Intent(this, RegistrationActivity::class.java)
             startActivity(intentToRegistrarion)
+
         }
 
         val toStartup = findViewById<ImageButton>(R.id.imageButton2)

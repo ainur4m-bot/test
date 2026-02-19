@@ -64,6 +64,7 @@ class RegistrationActivity : AppCompatActivity() {
             isPasswordOpen = !isPasswordOpen
         }
 
+
         val toStartup = findViewById<ImageButton>(R.id.buttonToStartup)
         toStartup.setOnClickListener {
 
