@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:gravity="center"
-
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
         android:text="Профиль"
         android:textColor="@color/cafeName"
         android:textSize="16sp"

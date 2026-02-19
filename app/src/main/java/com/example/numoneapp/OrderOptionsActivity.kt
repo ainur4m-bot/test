@@ -28,10 +28,17 @@ class OrderOptionsActivity : AppCompatActivity() {
         val toBarista = findViewById<ImageView>(R.id.toBarista)
         toBarista.setOnClickListener {
 
-            val intentToBarista = Intent(this, BaristaActivity::class.java)
+            val intentToBarista = Intent(this, MyOrderActivity::class.java)
             startActivity(intentToBarista)
         }
 
+
+        val shop = findViewById<ImageView>(R.id.imageView9)
+        shop.setOnClickListener {
+
+            val intentShop = Intent(this, OrderCurrentActivity::class.java)
+            startActivity(intentShop)
+        }
         var isSelectedDwa = false;
         var isSelected = false;
         var isSelectedCup = false;

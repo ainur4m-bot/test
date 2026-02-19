@@ -15,7 +15,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class AuthorizationActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "CutPasteId")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +27,14 @@ class AuthorizationActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
+        val emailEdit = findViewById<EditText>(R.id.emailEditText)
+        val passEdit = findViewById<EditText>(R.id.passwordEditText)
+
+        var email = findViewById<EditText>(R.id.emailEditText).toString().trim()
+        var pass = findViewById<EditText>(R.id.passwordEditText).toString().trim()
+
 
         val backToWelcome = findViewById<ImageView>(R.id.backToWelcomeArrow)
         backToWelcome.setOnClickListener {
@@ -62,9 +70,24 @@ class AuthorizationActivity : AppCompatActivity() {
         val toStartup = findViewById<ImageButton>(R.id.imageButton2)
         toStartup.setOnClickListener {
 
+            if(pass.length<8) {
+                passEdit.error = "Пароль должен быть не менее 8 символов"
+                return@setOnClickListener
+            }
+
+
+            if(email.isEmpty()) {
+                emailEdit.error = "Введите почту"
+                return@setOnClickListener
+            }
+
+
             val intentToStartup = Intent(this, StartupActivity::class.java)
             startActivity(intentToStartup)
+
         }
+
+
 
         val forgotPass = findViewById<TextView>(R.id.textForgotPass)
         forgotPass.setOnClickListener {
@@ -72,6 +95,13 @@ class AuthorizationActivity : AppCompatActivity() {
             val intentToVerif = Intent(this, ForgotPasswordActivity::class.java)
             startActivity(intentToVerif)
         }
+
+
+
+
+
+
+
 
 
 

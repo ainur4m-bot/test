@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NumOneApp">
         <activity
+            android:name=".OrderCurrentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderIsConfirmedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OplataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyOrderActivity"
+            android:exported="false" />
+        <activity
             android:name=".BaristaActivity"
             android:exported="false" />
         <activity

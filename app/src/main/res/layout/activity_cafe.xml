@@ -29,18 +29,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:gravity="center"
-        android:text="Выберите кофейню Coffee break"
-
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <View
         android:id="@+id/view2"
@@ -50,27 +38,26 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19"
+
         app:layout_constraintVertical_bias="1" />
 
     <ImageView
         android:id="@+id/buttonOne"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/green_button"
+        android:layout_marginTop="20dp"
 
         android:clickable="true"
         android:focusable="true"
-        android:background="@drawable/green_button"
-
-
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintVertical_bias="0"
-
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -91,11 +78,10 @@
         android:text="ул. Туркестанская, 3"
         android:textColor="@color/white"
         android:textSize="14sp"
-        android:layout_marginStart="14dp"
 
         app:layout_constraintBottom_toBottomOf="@+id/buttonOne"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toTopOf="@+id/buttonOne" />
 
 
 
@@ -191,16 +177,19 @@
         app:layout_constraintTop_toTopOf="@+id/buttonThree" />
 
     <TextView
+        android:id="@+id/textView37"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Выберите кофейню Coffee break"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        android:gravity="center"
 
-        app:layout_constraintVertical_bias="0.9"
-        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
 
