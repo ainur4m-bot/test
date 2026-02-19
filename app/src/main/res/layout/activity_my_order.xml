@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOrderActivity">
+
+    <ImageView
+
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+
+        android:layout_marginTop="21dp"
+        android:background="@drawable/ic_black_arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+
+        android:text="Мой заказ"
+        android:textColor="@color/ultra_black"
+
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <View
+        android:id="@+id/buttonOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="@drawable/white_background"
+
+        android:layout_marginTop="27dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <ImageView
+
+        android:id="@+id/coffee1"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/ic_americano2"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOne"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintStart_toStartOf="@+id/buttonOne"
+        app:layout_constraintTop_toTopOf="@+id/buttonOne"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
+        android:text="Американо"
+        android:textColor="@color/ultra_black"
+
+
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/coffee1"
+        app:layout_constraintTop_toTopOf="@+id/buttonOne" />
+
+    <TextView
+
+        android:id="@+id/podtext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="single | iced | medium | full ice"
+
+        android:textColor="@color/gray_A1"
+        android:textSize="10sp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintVertical_bias="0.2"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOne"
+        app:layout_constraintStart_toEndOf="@+id/coffee1"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/x1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="x 1"
+        android:textColorHint="@color/gray"
+        android:layout_marginStart="25dp"
+        app:layout_constraintVertical_bias="0.3"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOne"
+        app:layout_constraintStart_toEndOf="@+id/coffee1"
+        app:layout_constraintTop_toBottomOf="@+id/podtext1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/value1"
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="100 ₽"
+        android:textColorHint="@color/ultra_black"
+        android:textSize="18sp"
+
+        android:layout_marginEnd="7dp"
+        app:layout_constraintVertical_bias="0.36"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOne"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOne"
+        app:layout_constraintTop_toTopOf="@+id/buttonOne" />
+
+
+    <View
+        android:id="@+id/buttonTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="@drawable/white_background"
+
+        android:layout_marginTop="27dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOne"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <ImageView
+
+        android:id="@+id/coffee2"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/ic_capuchino"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="@+id/buttonTwo"
+        app:layout_constraintTop_toTopOf="@+id/buttonTwo"
+        app:layout_constraintWidth_percent="0.19" />
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Капучино"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/ultra_black"
+
+
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/coffee2"
+        app:layout_constraintTop_toTopOf="@+id/buttonTwo" />
+
+    <TextView
+
+        android:id="@+id/podtext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="single | iced | medium | full ice"
+
+        android:textColor="@color/gray_A1"
+        android:textSize="10sp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintVertical_bias="0.2"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintStart_toEndOf="@+id/coffee2"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    <TextView
+        android:id="@+id/x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="x 1"
+        android:textColorHint="@color/gray"
+        android:layout_marginStart="25dp"
+        app:layout_constraintVertical_bias="0.3"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintStart_toEndOf="@+id/coffee2"
+        app:layout_constraintTop_toBottomOf="@+id/podtext2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/value2"
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="100 ₽"
+        android:textColorHint="@color/ultra_black"
+        android:textSize="18sp"
+
+        android:layout_marginEnd="7dp"
+        app:layout_constraintVertical_bias="0.36"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTwo"
+        app:layout_constraintTop_toTopOf="@+id/buttonTwo" />
+
+
+    <View
+        android:id="@+id/buttonThree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="@drawable/white_background"
+
+        android:layout_marginTop="27dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTwo"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <ImageView
+
+        android:id="@+id/coffee3"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/ic_flat_white"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonThree"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="@+id/buttonThree"
+        app:layout_constraintTop_toTopOf="@+id/buttonThree"
+        app:layout_constraintWidth_percent="0.19" />
+
+    <TextView
+        android:id="@+id/text3"
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Флэт Уайт"
+
+        android:layout_marginStart="25dp"
+        android:textColor="@color/ultra_black"
+
+
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/coffee3"
+        app:layout_constraintTop_toTopOf="@+id/buttonThree" />
+
+    <TextView
+
+        android:id="@+id/podtext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="single | iced | medium | full ice"
+
+        android:textColor="@color/gray_A1"
+        android:textSize="10sp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintVertical_bias="0.2"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonThree"
+        app:layout_constraintStart_toEndOf="@+id/coffee3"
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+    <TextView
+        android:id="@+id/x3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="x 1"
+        android:textColorHint="@color/gray"
+        android:layout_marginStart="25dp"
+        app:layout_constraintVertical_bias="0.3"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonThree"
+        app:layout_constraintStart_toEndOf="@+id/coffee3"
+        app:layout_constraintTop_toBottomOf="@+id/podtext3" />
+
+    <TextView
+        android:id="@+id/value3"
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="100 ₽"
+        android:textColorHint="@color/ultra_black"
+        android:textSize="18sp"
+
+        android:layout_marginEnd="7dp"
+        app:layout_constraintVertical_bias="0.36"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonThree"
+        app:layout_constraintEnd_toEndOf="@+id/buttonThree"
+        app:layout_constraintTop_toTopOf="@+id/buttonThree" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Итоговая сумма"
+        android:textColor="@color/gray_A1"
+        android:textSize="12sp"
+        android:layout_marginEnd="4dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView41"
+        app:layout_constraintEnd_toStartOf="@+id/dalee"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/dalee"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/dark_button"
+
+        android:clickable="true"
+
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintWidth_percent="0.35" />
+
+    <TextView
+        android:id="@+id/textView41"
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/montserrat"
+
+        android:text="300 ₽"
+        android:textColorHint="@color/ultra_black"
+
+        android:textSize="21sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dalee"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Далее"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/dalee"
+        app:layout_constraintEnd_toEndOf="@+id/dalee"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/dalee" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_white_buy"
+        app:layout_constraintBottom_toBottomOf="@+id/dalee"
+        app:layout_constraintEnd_toEndOf="@+id/dalee"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/dalee"
+        app:layout_constraintTop_toTopOf="@+id/dalee" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

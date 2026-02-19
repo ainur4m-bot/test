@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat
 import org.intellij.lang.annotations.Pattern
 
 class RegistrationActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId", "SuspiciousIndentation")
+    @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -27,11 +27,20 @@ class RegistrationActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val emailEditText = findViewById<EditText>(R.id.emailEditText).text.toString()
+        val emailEditTextString = findViewById<EditText>(R.id.emailEditText).text.toString()
+        val emailEditText = findViewById<EditText>(R.id.emailEditText)
         val emailPattern = Regex("^[a-z0-9]+@[a-z0-9]+\\.ru$")
 
         val toAuthorization = findViewById<TextView>(R.id.toAuthorization)
         toAuthorization.setOnClickListener {
+
+            if(emailEditTextString.matches(emailPattern)){
+                emailEditText.error = "Некорректный email"
+                return@setOnClickListener
+            }
+
+
+
             val intent = Intent(this, AuthorizationActivity::class.java)
             startActivity(intent)
         }
@@ -64,15 +73,6 @@ class RegistrationActivity : AppCompatActivity() {
 
         }
 
-        val editText = findViewById<EditText>(R.id.nameEditText)
-        val name = editText.text.toString().trim()
-
-        val data = getSharedPreferences("userData", MODE_PRIVATE)
-        val editor = data.edit()
-
-            editor.putString("name",name)
-
-        editor.apply()
 
 
 

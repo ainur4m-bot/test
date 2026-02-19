@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
 
         android:textColor="@color/userName"
+        android:text="Алексей"
         android:textSize="18sp"
         android:layout_marginStart="26dp"
 

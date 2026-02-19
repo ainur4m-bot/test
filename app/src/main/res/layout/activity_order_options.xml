@@ -27,7 +27,7 @@
 
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
         android:text="Заказ"
 
         android:textSize="16sp"
@@ -87,7 +87,7 @@
 
         android:text="Капучино"
         android:textColor="@color/cafeName"
-
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView20" />
@@ -169,7 +169,7 @@
         android:text="Ристретто"
         android:textColor="@color/cafeName"
         android:layout_marginTop="21dp"
-
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3" />
@@ -245,7 +245,7 @@
     <TextView
         android:id="@+id/place"
         android:layout_width="wrap_content"
-
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
 
@@ -306,7 +306,7 @@
     <TextView
         android:id="@+id/obiem"
         android:layout_width="wrap_content"
-
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginTop="18dp"
@@ -435,7 +435,6 @@
         android:layout_marginTop="8dp"
         android:text="Приготовить к\nопределенному времени\nсегодня?"
         android:textColor="@color/cafeName"
-
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view6" />
@@ -470,17 +469,18 @@
         android:id="@+id/imageView29"
         android:layout_width="0dp"
 
+        android:layout_height="0dp"
+        android:layout_marginTop="19dp"
+
+        android:background="@drawable/dark_green_button"
+
         android:clickable="true"
         android:focusable="true"
 
-        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/toBarista"
 
-        android:layout_marginTop="10dp"
-        android:background="@drawable/dark_green_button"
-
+        app:layout_constraintVertical_bias="0.3"
         app:layout_constraintEnd_toEndOf="parent"
-
-
         app:layout_constraintHeight_percent="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView27"
@@ -526,7 +526,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
 
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="18dp"
         android:background="@drawable/dark_button"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -555,16 +555,14 @@
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
-
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintVertical_bias="0.7"
         android:text="Итоговая сумма"
         android:textColor="@color/cafeName"
-
+        app:layout_constraintVertical_bias="0.7"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView31"
+        app:layout_constraintBottom_toTopOf="@+id/toBarista"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView29" />
 
@@ -573,15 +571,13 @@
         android:layout_height="wrap_content"
 
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="9dp"
         android:fontFamily="@font/montserrat"
         android:text="250₽"
-
+        app:layout_constraintVertical_bias="0.7"
         android:textColor="@color/black"
         android:textSize="16sp"
-            app:layout_constraintVertical_bias="1"
-
-        app:layout_constraintBottom_toTopOf="@+id/imageView31"
+        style="@style/TextAppearance.Material3.DisplayLarge.Emphasized"
+        app:layout_constraintBottom_toTopOf="@+id/toBarista"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView29" />
 

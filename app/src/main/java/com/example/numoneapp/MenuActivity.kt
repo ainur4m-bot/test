@@ -73,5 +73,12 @@ class MenuActivity : AppCompatActivity() {
             val intentToProfile = Intent(this, ProfileActivity::class.java)
             startActivity(intentToProfile)
         }
+
+        val shop = findViewById<ImageView>(R.id.shopIcon)
+        shop.setOnClickListener {
+
+            val intent = Intent(this, OrderCurrentActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
